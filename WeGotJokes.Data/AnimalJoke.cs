@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WeGotJokes.Data
 {
-    public class AnimalJoke
+    public class AnimalJoke : Joke
     {
     }
 }
