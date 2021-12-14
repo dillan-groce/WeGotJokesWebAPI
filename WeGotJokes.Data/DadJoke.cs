@@ -9,8 +9,5 @@ namespace WeGotJokes.Data
 {
    public class DadJoke : Joke
     {
-        [Key]
-        public int dadJokeId { get; set; }
-        public virtual List<Rating> Ratings { get; set; } = new List<Rating>();
     }
 }
