@@ -11,7 +11,6 @@ namespace WeGotJokes.Data
     {
         [Key]
         public int AnimalJokeId { get; set; }
-
         public virtual List<Rating> Ratings { get; set; }
     }
 }
