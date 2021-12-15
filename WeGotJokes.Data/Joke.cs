@@ -15,7 +15,7 @@ namespace WeGotJokes.Data
         [Required]
         public DateTimeOffset CreatedUTC { get; set; }
         
-        [Required]
+          
         public DateTimeOffset? ModifiedUTC { get; set; }
         
         [Required]
