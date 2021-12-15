@@ -54,6 +54,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AnimalJoke\AnimalJokeCreate.cs" />
+    <Compile Include="AnimalJoke\AnimalJokeDetail.cs" />
+    <Compile Include="AnimalJoke\AnimalJokeEdit.cs" />
+    <Compile Include="AnimalJoke\AnimalJokeListItem.cs" />
+    <Compile Include="DadJoke\DadJokeCreate.cs" />
+    <Compile Include="DadJoke\DadJokeDetail.cs" />
+    <Compile Include="DadJoke\DadJokeEdit.cs" />
+    <Compile Include="DadJoke\DadJokeListItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
