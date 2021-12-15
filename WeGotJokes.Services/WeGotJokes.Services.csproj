@@ -54,7 +54,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AnimalJokeService.cs" />
+    <Compile Include="DadJokeService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RatingService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
