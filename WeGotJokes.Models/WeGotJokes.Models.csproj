@@ -63,6 +63,10 @@
     <Compile Include="DadJoke\DadJokeEdit.cs" />
     <Compile Include="DadJoke\DadJokeListItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rating\RatingCreate.cs" />
+    <Compile Include="Rating\RatingDetail.cs" />
+    <Compile Include="Rating\RatingEdit.cs" />
+    <Compile Include="Rating\RatingListItem.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
