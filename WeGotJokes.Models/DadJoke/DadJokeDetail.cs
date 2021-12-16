@@ -14,6 +14,6 @@ namespace WeGotJokes.Models.DadJoke
         [Display(Name = "Joke Created")]
         public DateTimeOffset CreatedUtc { get; set; }
         [Display(Name =" Joke Last Modified")]
-        public DateTimeOffset ModifiedUtc { get; set; }
+        public DateTimeOffset? ModifiedUtc { get; set; }
     }
 }

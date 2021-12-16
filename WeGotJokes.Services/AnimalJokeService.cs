@@ -8,7 +8,7 @@ using WeGotJokes.Models.AnimalJoke;
 
 namespace WeGotJokes.Services
 {
-   public class AnimalJokeService
+    public class AnimalJokeService
     {
         private readonly Guid _userId;
         public AnimalJokeService(Guid userId)

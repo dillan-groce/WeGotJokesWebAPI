@@ -65,11 +65,13 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\WeGotJokes.Data\WeGotJokes.Data.csproj">
+
       <Project>{69494666-AAA8-4A58-B7C3-75138B5AB628}</Project>
       <Name>WeGotJokes.Data</Name>
     </ProjectReference>
     <ProjectReference Include="..\WeGotJokes.Models\WeGotJokes.Models.csproj">
       <Project>{BB831963-DA02-43FB-8DF2-DC29845756AA}</Project>
+
       <Name>WeGotJokes.Models</Name>
     </ProjectReference>
   </ItemGroup>
