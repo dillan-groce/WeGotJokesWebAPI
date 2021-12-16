@@ -11,3 +11,4 @@ namespace WeGotJokes.Services
     public class AnimalJokeService
     {
     }
+}
