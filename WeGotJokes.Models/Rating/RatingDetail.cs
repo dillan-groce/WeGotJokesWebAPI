@@ -11,5 +11,11 @@ namespace WeGotJokes.Models.Rating
     {
         public int RatingId { get; set; }
         public double StarCount { get; set; }
+
+        [ForeignKey("DadJoke")]
+        public int DadJokeId { get; set; }
+
+        [ForeignKey("AnimalJoke")]
+        public int AnimalJokeId { get; set; }
     }
 }
