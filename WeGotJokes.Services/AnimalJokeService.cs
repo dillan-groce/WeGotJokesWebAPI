@@ -8,7 +8,6 @@ using WeGotJokes.Models.AnimalJoke;
 
 namespace WeGotJokes.Services
 {
-    public class AnimalJokeService
+   public class AnimalJokeService
     {
     }
-}
