@@ -92,6 +92,10 @@
     <Compile Include="Migrations\202112150211059_CreatedJoke.Designer.cs">
       <DependentUpon>202112150211059_CreatedJoke.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202112170202010_CreateJokes.cs" />
+    <Compile Include="Migrations\202112170202010_CreateJokes.Designer.cs">
+      <DependentUpon>202112170202010_CreateJokes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Rating.cs" />
@@ -103,6 +107,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202112150211059_CreatedJoke.resx">
       <DependentUpon>202112150211059_CreatedJoke.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202112170202010_CreateJokes.resx">
+      <DependentUpon>202112170202010_CreateJokes.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
