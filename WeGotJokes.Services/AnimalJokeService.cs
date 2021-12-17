@@ -85,6 +85,39 @@ namespace WeGotJokes.Services
             }
         }
 
-        //get a random Animal Joke
+        //get random animal joke (is the get animal joke w/out Id (code beginning line 35) already doing that?)
+        //public IEnumerable<AnimalJokeListItem> GetRandomAnimalJoke()
+        //{
+        //    using (var ctx = new ApplicationDbContext())
+        //    {
+        //        var query =
+        //            ctx
+        //            .AnimalJokes
+        //            .Select(
+        //                e =>
+        //                new AnimalJokeListItem
+        //                {
+        //                    AnimalJokeId = e.AnimalJokeId,
+        //                    Punchline = e.Punchline,
+        //                    CreatedUtc = e.CreatedUTC
+        //                }
+        //                );
+        //        return query.ToArray();
+        //    }
+        //}
+
+        public bool DeleteAnimalJoke(int animalJokeId)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity =
+                    ctx
+                    .AnimalJokes
+                    .Single(e => e.AnimalJokeId == animalJokeId && e.JokeCreator == _userId);
+
+                ctx.AnimalJokes.Remove(entity);
+                return ctx.SaveChanges() == 1;
+            }
+        }
     }
 }
