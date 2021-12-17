@@ -34,7 +34,7 @@ namespace WeGotJokes.Services
             }
         }
 
-        public IEnumerable<DadJokeListItem> GetNotes()
+        public IEnumerable<DadJokeListItem> GetDadJokes()
         {
             using (var ctx = new ApplicationDbContext())
             {
