@@ -96,6 +96,10 @@
     <Compile Include="Migrations\202112201357194_JokeDatabase.Designer.cs">
       <DependentUpon>202112201357194_JokeDatabase.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202112201448097_JokeDatabase1.cs" />
+    <Compile Include="Migrations\202112201448097_JokeDatabase1.Designer.cs">
+      <DependentUpon>202112201448097_JokeDatabase1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Rating.cs" />
@@ -110,6 +114,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202112201357194_JokeDatabase.resx">
       <DependentUpon>202112201357194_JokeDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202112201448097_JokeDatabase1.resx">
+      <DependentUpon>202112201448097_JokeDatabase1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
