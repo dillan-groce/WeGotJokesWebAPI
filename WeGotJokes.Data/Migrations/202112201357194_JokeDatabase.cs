@@ -3,16 +3,15 @@ namespace WeGotJokes.Data.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class CreateJokes : DbMigration
+    public partial class JokeDatabase : DbMigration
     {
         public override void Up()
         {
-            AlterColumn("dbo.Rating", "OwnerId", c => c.Guid(nullable: false));
+            // If the the updated migraitons folder will not allow the appliction to query the following properties in the database implement new code here...
         }
         
         public override void Down()
         {
-            AlterColumn("dbo.Rating", "OwnerId", c => c.Int(nullable: false));
         }
     }
 }

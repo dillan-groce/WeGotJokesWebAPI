@@ -10,6 +10,7 @@ namespace WeGotJokes.Data.Migrations
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
+            ContextKey = "WeGotJokes.Data.ApplicationDbContext";
         }
 
         protected override void Seed(WeGotJokes.Data.ApplicationDbContext context)

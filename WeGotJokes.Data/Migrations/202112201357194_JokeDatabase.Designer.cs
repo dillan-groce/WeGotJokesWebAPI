@@ -7,13 +7,13 @@ namespace WeGotJokes.Data.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.0-30225")]
-    public sealed partial class CreatedJoke : IMigrationMetadata
+    public sealed partial class JokeDatabase : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(CreatedJoke));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(JokeDatabase));
         
         string IMigrationMetadata.Id
         {
-            get { return "202112150211059_CreatedJoke"; }
+            get { return "202112201357194_JokeDatabase"; }
         }
         
         string IMigrationMetadata.Source
