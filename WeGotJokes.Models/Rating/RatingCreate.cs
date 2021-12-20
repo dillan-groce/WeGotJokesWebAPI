@@ -14,6 +14,7 @@ namespace WeGotJokes.Models.Rating
         [Range(0, 5, ErrorMessage ="Please choose a number between 1 and 5")]
         public double StarCount { get; set; }
 
+        // COme back if we have problems
         public Guid OwnerId { get; set; }
 
         [ForeignKey("DadJoke")]

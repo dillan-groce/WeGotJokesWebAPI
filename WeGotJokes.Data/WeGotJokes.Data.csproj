@@ -88,9 +88,17 @@
     <Compile Include="DadJoke.cs" />
     <Compile Include="IdentityModels.cs" />
     <Compile Include="Joke.cs" />
-    <Compile Include="Migrations\202112150211059_CreatedJoke.cs" />
-    <Compile Include="Migrations\202112150211059_CreatedJoke.Designer.cs">
-      <DependentUpon>202112150211059_CreatedJoke.cs</DependentUpon>
+    <Compile Include="Migrations\202112170258239_InitialCreate.cs" />
+    <Compile Include="Migrations\202112170258239_InitialCreate.Designer.cs">
+      <DependentUpon>202112170258239_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202112201357194_JokeDatabase.cs" />
+    <Compile Include="Migrations\202112201357194_JokeDatabase.Designer.cs">
+      <DependentUpon>202112201357194_JokeDatabase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202112201448097_JokeDatabase1.cs" />
+    <Compile Include="Migrations\202112201448097_JokeDatabase1.Designer.cs">
+      <DependentUpon>202112201448097_JokeDatabase1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -101,8 +109,14 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202112150211059_CreatedJoke.resx">
-      <DependentUpon>202112150211059_CreatedJoke.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202112170258239_InitialCreate.resx">
+      <DependentUpon>202112170258239_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202112201357194_JokeDatabase.resx">
+      <DependentUpon>202112201357194_JokeDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202112201448097_JokeDatabase1.resx">
+      <DependentUpon>202112201448097_JokeDatabase1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

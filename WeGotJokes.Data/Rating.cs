@@ -10,6 +10,7 @@ namespace WeGotJokes.Data
 {
     public class Rating
     {
+        [Key]
         public int RatingId { get; set; }
 
         [Range(0, 5, ErrorMessage = "Please choose a number between 1 and 5")]
