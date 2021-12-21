@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNet.Identity;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -19,7 +20,7 @@ namespace WeGotJokes.WebAPI.Controllers
             var animalJokeService = new AnimalJokeService(userId);
             return animalJokeService;
         }
-
+        // this comment is irrelevant and only added to test a commit to git
         [HttpGet]
         public IHttpActionResult Get()
         {
