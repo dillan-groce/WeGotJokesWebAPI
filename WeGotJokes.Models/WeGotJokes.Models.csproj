@@ -54,7 +54,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AnimalJoke\AnimalJokeCreate.cs" />
+    <Compile Include="AnimalJoke\AnimalJokeDetail.cs" />
+    <Compile Include="AnimalJoke\AnimalJokeEdit.cs" />
+    <Compile Include="AnimalJoke\AnimalJokeListItem.cs" />
+    <Compile Include="DadJoke\DadJokeCreate.cs" />
+    <Compile Include="DadJoke\DadJokeDetail.cs" />
+    <Compile Include="DadJoke\DadJokeEdit.cs" />
+    <Compile Include="DadJoke\DadJokeListItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rating\RatingCreate.cs" />
+    <Compile Include="Rating\RatingDetail.cs" />
+    <Compile Include="Rating\RatingEdit.cs" />
+    <Compile Include="Rating\RatingListItem.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

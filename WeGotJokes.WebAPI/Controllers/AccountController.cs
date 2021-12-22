@@ -13,6 +13,7 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.OAuth;
+using WeGotJokes.Data;
 using WeGotJokes.WebAPI.Models;
 using WeGotJokes.WebAPI.Providers;
 using WeGotJokes.WebAPI.Results;

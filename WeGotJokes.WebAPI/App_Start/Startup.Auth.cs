@@ -10,6 +10,7 @@ using Microsoft.Owin.Security.OAuth;
 using Owin;
 using WeGotJokes.WebAPI.Providers;
 using WeGotJokes.WebAPI.Models;
+using WeGotJokes.Data;
 
 namespace WeGotJokes.WebAPI
 {

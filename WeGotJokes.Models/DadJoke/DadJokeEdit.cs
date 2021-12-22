@@ -1,16 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WeGotJokes.Data
+namespace WeGotJokes.Models.DadJoke
 {
-   public class DadJoke : Joke
+    public class DadJokeEdit
     {
-        [Key]
         public int DadJokeId { get; set; }
-        public virtual List<Rating> Ratings { get; set; }
+        public string Punchline { get; set; }
+        public bool Clean { get; set; }
     }
 }
