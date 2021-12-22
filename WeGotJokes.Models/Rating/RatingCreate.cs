@@ -18,9 +18,9 @@ namespace WeGotJokes.Models.Rating
         //public Guid OwnerId { get; set; }
 
         [ForeignKey("DadJoke")]
-        public int DadJokeId { get; set; }
+        public int? DadJokeId { get; set; }
 
         [ForeignKey("AnimalJoke")]
-        public int AnimalJokeId { get; set; }
+        public int? AnimalJokeId { get; set; }
     }
 }
