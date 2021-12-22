@@ -3,7 +3,7 @@ namespace WeGotJokes.Data.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class CreatedJoke : DbMigration
+    public partial class InitialCreate : DbMigration
     {
         public override void Up()
         {
@@ -26,7 +26,7 @@ namespace WeGotJokes.Data.Migrations
                     {
                         RatingId = c.Int(nullable: false, identity: true),
                         StarCount = c.Double(nullable: false),
-                        OwnerId = c.Int(nullable: false),
+                        OwnerId = c.Guid(nullable: false),
                         DadJokeId = c.Int(nullable: false),
                         AnimalJokeId = c.Int(nullable: false),
                     })
@@ -41,6 +41,7 @@ namespace WeGotJokes.Data.Migrations
                 c => new
                     {
                         DadJokeId = c.Int(nullable: false, identity: true),
+                        MyProperty = c.Int(nullable: false),
                         JokeCreator = c.Guid(nullable: false),
                         CreatedUTC = c.DateTimeOffset(nullable: false, precision: 7),
                         ModifiedUTC = c.DateTimeOffset(precision: 7),

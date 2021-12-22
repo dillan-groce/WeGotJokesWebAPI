@@ -10,6 +10,7 @@ namespace WeGotJokes.Data
 {
     public class Rating
     {
+        [Key]
         public int RatingId { get; set; }
 
         [Range(0, 5, ErrorMessage = "Please choose a number between 1 and 5")]
@@ -17,11 +18,11 @@ namespace WeGotJokes.Data
         public Guid OwnerId { get; set; }
 
         [ForeignKey("DadJoke")]
-        public int DadJokeId { get; set; }
+        public int? DadJokeId { get; set; }
         public virtual DadJoke DadJoke { get; set; }
 
         [ForeignKey("AnimalJoke")]
-        public int AnimalJokeId { get; set; }
+        public int? AnimalJokeId { get; set; }
         public virtual AnimalJoke AnimalJoke { get; set; }
     }
 }

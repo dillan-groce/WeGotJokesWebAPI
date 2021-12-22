@@ -38,6 +38,14 @@ namespace WeGotJokes.Data
         public DbSet<AnimalJoke> AnimalJokes { get; set; }
         public DbSet<Rating> Ratings { get; set; }
 
+        // Add Joke entity class to ApplicationDbContext in oder to bypass the abstract issue
+
+        // Important note: DO NOT RUN the following command until the code within the (Up) method has been configured   
+
+        // Side note: Add entity and then create and update migrations and enter the following command (dotnet ef migrations add Inheritance)
+        
+        //public DbSet<Joke> Jokes { get; set; } 
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder
