@@ -11,6 +11,7 @@ namespace WeGotJokes.Models.DadJoke
     {
         public int DadJokeId { get; set; }
         public string Punchline { get; set; }
+        public bool Clean { get; set; }
         [Display(Name = "Joke Created")]
         public DateTimeOffset CreatedUtc { get; set; }
     }

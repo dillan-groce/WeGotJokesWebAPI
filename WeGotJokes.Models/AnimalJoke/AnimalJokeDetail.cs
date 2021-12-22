@@ -11,9 +11,10 @@ namespace WeGotJokes.Models.AnimalJoke
     {
         public int AnimalJokeId { get; set; }
         public string Punchline { get; set; }
+        public bool Clean { get; set; }
         [Display(Name = "Joke Created")]
         public DateTimeOffset CreatedUtc { get; set; }
         [Display(Name =" Joke Last Modified")]
-        public DateTimeOffset ModifiedUtc { get; set; }
+        public DateTimeOffset? ModifiedUtc { get; set; }
     }
 }

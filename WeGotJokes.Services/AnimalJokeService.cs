@@ -46,6 +46,7 @@ namespace WeGotJokes.Services
                         {
                             AnimalJokeId = e.AnimalJokeId,
                             Punchline = e.Punchline,
+                            Clean = e.Clean,
                             CreatedUtc = e.CreatedUTC
                         }
                         );
@@ -66,6 +67,7 @@ namespace WeGotJokes.Services
                     {
                         AnimalJokeId = entity.AnimalJokeId,
                         Punchline = entity.Punchline,
+                        Clean = entity.Clean,
                         CreatedUtc = entity.CreatedUTC,
                     };
             }
@@ -80,6 +82,7 @@ namespace WeGotJokes.Services
                     .AnimalJokes
                     .Single(e => e.AnimalJokeId == model.AnimalJokeId && e.JokeCreator == _userId);
                 entity.Punchline = model.Punchline;
+                entity.Clean = model.Clean;
                 entity.ModifiedUTC = DateTimeOffset.UtcNow;
                 return ctx.SaveChanges() == 1;
             }
@@ -99,6 +102,7 @@ namespace WeGotJokes.Services
         //                {
         //                    AnimalJokeId = e.AnimalJokeId,
         //                    Punchline = e.Punchline,
+        //                    Clean = e.Clean
         //                    CreatedUtc = e.CreatedUTC
         //                }
         //                );
