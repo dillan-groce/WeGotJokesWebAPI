@@ -12,7 +12,5 @@ namespace WeGotJokes.Data
         [Key]
         public int DadJokeId { get; set; }
         public virtual List<Rating> Ratings { get; set; }
-
-        //public int MyProperty { get; set; }
     }
 }

@@ -10,5 +10,6 @@ namespace WeGotJokes.Models.AnimalJoke
     {
         public int AnimalJokeId { get; set; }
         public string Punchline { get; set; }
+        public bool Clean { get; set; }
     }
 }

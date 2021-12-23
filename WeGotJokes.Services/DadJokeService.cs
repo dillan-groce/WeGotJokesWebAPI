@@ -24,6 +24,7 @@ namespace WeGotJokes.Services
                         {
                             JokeCreator = _userId,
                             Punchline = model.Punchline,
+                            Clean =model.Clean,
                             CreatedUTC = DateTimeOffset.Now
                         };
 
@@ -48,6 +49,7 @@ namespace WeGotJokes.Services
                                     {
                                         DadJokeId = e.DadJokeId,
                                         Punchline = e.Punchline,
+                                        Clean = e.Clean,
                                         CreatedUtc = e.CreatedUTC
                                     }
                                 );
@@ -68,6 +70,7 @@ namespace WeGotJokes.Services
                     new DadJokeDetail
                     {
                         DadJokeId = entity.DadJokeId,
+                        Clean = entity.Clean,
                         CreatedUtc = entity.CreatedUTC,
                         ModifiedUtc = entity.ModifiedUTC,
                         Punchline = entity.Punchline
@@ -85,6 +88,7 @@ namespace WeGotJokes.Services
                         .Single(e => e.DadJokeId == model.DadJokeId && e.JokeCreator == _userId);
 
                 entity.Punchline = model.Punchline;
+                entity.Clean = model.Clean;
                 entity.ModifiedUTC = DateTimeOffset.UtcNow;
 
                 return ctx.SaveChanges() == 1;
