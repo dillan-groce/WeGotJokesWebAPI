@@ -24,7 +24,7 @@ namespace WeGotJokes.Services
                         {
                             JokeCreator = _userId,
                             Punchline = model.Punchline,
-                            Clean =model.Clean,
+                            Clean = model.Clean,
                             CreatedUTC = DateTimeOffset.Now
                         };
 
@@ -78,9 +78,35 @@ namespace WeGotJokes.Services
             }
         }
 
+       /* public DadJokeDetail GetRandomDadJoke(int id)
+        { var rand = new Random();
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity =
+                    ctx
+                            .DadJokes
+                                        // Have to include a particular model: Maybe DadJokeListItem?
+                            .Include()
+                            .Single(e => e.DadJokeId == //rand.Next(id) && e.JokeCreator == _userId);
+                            
+                                            new DadJokeListItem
+                                            {
+                                                DadJokeId = e.DadJokeId,
+                                                Punchline = e.Punchline,
+                                                Clean = e.Clean,
+                                                CreatedUtc = e.CreatedUTC
+                                                //RandNext()
+                                            }
+                                           );
+
+                return entity.();
+
+            }
+        }*/
+
         public bool UpdateDadJoke(DadJokeEdit model)
         {
-            using(var ctx = new ApplicationDbContext())
+            using (var ctx = new ApplicationDbContext())
             {
                 var entity =
                     ctx

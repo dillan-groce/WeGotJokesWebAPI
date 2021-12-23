@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeGotJokes.Models", "WeGotJ
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeGotJokes.Services", "WeGotJokes.Services\WeGotJokes.Services.csproj", "{9B5EAA31-3B93-4342-A0C2-D5E99FFC2EEA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeGotJokes.Test", "WeGotJokesTest\WeGotJokes.Test.csproj", "{BB53E1BD-70AA-4890-ABEF-CEF849D1E8B1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{9B5EAA31-3B93-4342-A0C2-D5E99FFC2EEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9B5EAA31-3B93-4342-A0C2-D5E99FFC2EEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9B5EAA31-3B93-4342-A0C2-D5E99FFC2EEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB53E1BD-70AA-4890-ABEF-CEF849D1E8B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB53E1BD-70AA-4890-ABEF-CEF849D1E8B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB53E1BD-70AA-4890-ABEF-CEF849D1E8B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB53E1BD-70AA-4890-ABEF-CEF849D1E8B1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

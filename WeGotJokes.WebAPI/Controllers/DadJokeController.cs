@@ -28,6 +28,19 @@ namespace WeGotJokes.WebAPI.Controllers
             return Ok(dadJokes);
         }
 
+        /*[HttpGet]
+        public IHttpActionResult GetRandomDadJoke([FromBody] DadJokeListItem dadJoke)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            var service = CreateDadJokeService();
+
+            if (!service.GetRandomDadJoke(dadJoke))
+                return InternalServerError();
+            return Ok();
+        }*/
+
         [HttpPost]
         public IHttpActionResult CreateDadJoke([FromBody]DadJokeCreate dadJoke)
         {
